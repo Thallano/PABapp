@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import {View, Text, Linking } from 'react-native';
+import {View} from 'react-native';
 import PageHeader from '../../components/PageHeader';
 
-import ItemMenu from '../../components/ItemTres';
+import ItemMenu from '../../components/Itens';
 import styles from './styles';
 
 
 
-function Bebes ( ) {
+function Arruma ( ) {
    
     return (
         
@@ -21,4 +21,4 @@ function Bebes ( ) {
     );
 }
 
-export default Bebes;
+export default Arruma;

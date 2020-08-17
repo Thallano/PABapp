@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
         marginRight: -45,
         marginLeft: -25,
         maxHeight: "35%",
-        backgroundColor: '#D6F420',
+        backgroundColor: '#F1574D',
         flexDirection: 'column'
         
     },
@@ -29,8 +29,8 @@ const styles = StyleSheet.create({
         color: '#2D3741',
         fontSize: 24,
         marginTop: -175,
-        marginBottom: 20,
-        marginLeft: 10,
+        marginBottom: 55,
+        marginLeft: 24,
         
     },
 });

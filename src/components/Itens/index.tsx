@@ -1,7 +1,9 @@
 import React, { useState, useEffect, } from "react";
-import {View, Text, Linking, Alert } from 'react-native';
+import {View, Text, Linking, Alert, Image } from 'react-native';
 import { MaterialIcons, MaterialCommunityIcons, Entypo, FontAwesome5 } from '@expo/vector-icons'; 
 import { Fontisto } from '@expo/vector-icons'; 
+import { useNavigation } from '@react-navigation/native';
+
 
 import styles from "../Styles/styles";
 import { RectButton, TouchableOpacity, ScrollView } from "react-native-gesture-handler";
@@ -10,7 +12,7 @@ function ItemMenu( ) {
     
     const color = [
         '#3d4b58',
-        '#D6F420'
+        '#F1574D'
     ];
 
     const name : string[] = [
@@ -56,10 +58,10 @@ function ItemMenu( ) {
         'Maria Isabel, Frango, Carne e Calabresa em Cubos, Feijão Tropeiro e Creme de Galinha',
         'Maria Isabel, Frango, Carne e Calabresa em Cubos, Feijão Tropeiro e Creme de Galinha',
         'Maria Isabel, Frango, Carne e Calabresa em Cubos, Feijão Tropeiro e Creme de Galinha',
-        'Pão, carne 160g, queijo, alface, tomate e molho especial da papai.',
-        'Pão, carne 160, queijo, alface, tomate e molho especial do mamãe.',
-        'Pão, carne 90g, queijo, calabresa, alface, tomate e molho especial do mamãe.',
-        'Pão, carne 90g, queijo, cebola caramelizada, alface, tomate e molho especial do mamãe.',
+        'Pão, carne 160g, queijo, alface, tomate e molho especial do papai.',
+        'Pão, carne 160, queijo, alface, tomate e molho especial da mamãe.',
+        'Pão, carne 90g, queijo, calabresa, alface, tomate e molho especial da mamãe.',
+        'Pão, carne 90g, queijo, cebola caramelizada, alface, tomate e molho especial da mamãe.',
         'Refrigerante em embalagem PET, não Retornável.',
         'Refrigerante em embalagem PET, não Retornável.',
         'Refrigerante em Lata de 350ml, não Retornável.',
@@ -101,7 +103,8 @@ function ItemMenu( ) {
     const [resume10, setResume10] = useState([]);
     const [resume11, setResume11] = useState([]);
     const [resume12, setResume12] = useState([]);
-   
+    
+    const { navigate } = useNavigation();
     /* Calculos Totais */
 
     const [bagColor, setBagColor] = useState(0);
@@ -112,7 +115,8 @@ function ItemMenu( ) {
     const [isBagVisible, setIsBagVisible] = useState(false);
 
     const [isRemoveVisible, setIsRemoveVisible] = useState(false);
-    
+
+       
     function handleLinkToWhatsapp ( ) {
         Linking.openURL(`https://api.whatsapp.com/send?phone=5586988377437&text=Oi__Boa_noite!_Gostaria_de_fazer_este_pedido:__>${"\n"}${resume1}${resume2}${resume3}${resume4}${resume5}${resume6}${resume7}${resume8}${resume9}${resume10}${resume11}${resume12}__|No__valor__total__de__R$__${totalCost},00`)
     }
@@ -395,7 +399,7 @@ return (
 <MaterialCommunityIcons name="tie" size={32} style={styles.iconMenuItemTittle}/>
 </View>
 
-        <View style={styles.container}>
+        <View style={styles.container} >
             
             <Text style={styles.itemName}>{name[0]}</Text>     
 
@@ -407,7 +411,7 @@ return (
                 <Text style={styles.contador}>{count1}</Text>
 
                 <TouchableOpacity style={styles.countAdd} onPress={handleOnPressPlus} >
-                    <MaterialIcons name="add" size={32} color="#D6F420" />
+                    <MaterialIcons name="add" size={32} color="#F1574D" />
                 </TouchableOpacity>
                 
                 {isRemoveVisible &&
@@ -433,7 +437,7 @@ return (
             <View style={styles.countAddRemove} >
                 <Text style={styles.contador}>{count2}</Text>
                 <TouchableOpacity style={styles.countAdd} onPress={handleOnPressPlus2} >
-                    <MaterialIcons name="add" size={32} color="#D6F420" />
+                    <MaterialIcons name="add" size={32} color="#F1574D" />
                 </TouchableOpacity>
                 {isRemoveVisible &&
                 <TouchableOpacity style={styles.countRemove} onPress={handleOnPressRemove2}>
@@ -458,7 +462,7 @@ return (
             <View style={styles.countAddRemove} >
                 <Text style={styles.contador}>{count3}</Text>
                 <TouchableOpacity style={styles.countAdd} onPress={handleOnPressPlus3} >
-                    <MaterialIcons name="add" size={32} color="#D6F420" />
+                    <MaterialIcons name="add" size={32} color="#F1574D" />
                 </TouchableOpacity>
                 {isRemoveVisible &&
                 <TouchableOpacity style={styles.countRemove} onPress={handleOnPressRemove3}>
@@ -489,7 +493,7 @@ return (
             <View style={styles.countAddRemove} >
                 <Text style={styles.contador}>{count4}</Text>
                 <TouchableOpacity style={styles.countAdd} onPress={handleOnPressPlus4} >
-                    <MaterialIcons name="add" size={32} color="#D6F420" />
+                    <MaterialIcons name="add" size={32} color="#F1574D" />
                 </TouchableOpacity>
                 {isRemoveVisible &&
                 <TouchableOpacity style={styles.countRemove} onPress={handleOnPressRemove4}>
@@ -514,7 +518,7 @@ return (
             <View style={styles.countAddRemove} >
                 <Text style={styles.contador}>{count5}</Text>
                 <TouchableOpacity style={styles.countAdd} onPress={handleOnPressPlus5} >
-                    <MaterialIcons name="add" size={32} color="#D6F420" />
+                    <MaterialIcons name="add" size={32} color="#F1574D" />
                 </TouchableOpacity>
                 {isRemoveVisible &&
                 <TouchableOpacity style={styles.countRemove} onPress={handleOnPressRemove5}>
@@ -539,7 +543,7 @@ return (
             <View style={styles.countAddRemove} >
                 <Text style={styles.contador}>{count6}</Text>
                 <TouchableOpacity style={styles.countAdd} onPress={handleOnPressPlus6} >
-                    <MaterialIcons name="add" size={32} color="#D6F420" />
+                    <MaterialIcons name="add" size={32} color="#F1574D" />
                 </TouchableOpacity>
                 {isRemoveVisible &&
                 <TouchableOpacity style={styles.countRemove} onPress={handleOnPressRemove6}>
@@ -564,7 +568,7 @@ return (
             <View style={styles.countAddRemove} >
                 <Text style={styles.contador}>{count7}</Text>
                 <TouchableOpacity style={styles.countAdd} onPress={handleOnPressPlus7} >
-                    <MaterialIcons name="add" size={32} color="#D6F420" />
+                    <MaterialIcons name="add" size={32} color="#F1574D" />
                 </TouchableOpacity>
                 {isRemoveVisible &&
                 <TouchableOpacity style={styles.countRemove} onPress={handleOnPressRemove7}>
@@ -594,7 +598,7 @@ return (
             <View style={styles.countAddRemove} >
                 <Text style={styles.contador}>{count8}</Text>
                 <TouchableOpacity style={styles.countAdd} onPress={handleOnPressPlus8} >
-                    <MaterialIcons name="add" size={32} color="#D6F420" />
+                    <MaterialIcons name="add" size={32} color="#F1574D" />
                 </TouchableOpacity>
                 {isRemoveVisible &&
                 <TouchableOpacity style={styles.countRemove} onPress={handleOnPressRemove8}>
@@ -619,7 +623,7 @@ return (
             <View style={styles.countAddRemove} >
                 <Text style={styles.contador}>{count9}</Text>
                 <TouchableOpacity style={styles.countAdd} onPress={handleOnPressPlus9} >
-                    <MaterialIcons name="add" size={32} color="#D6F420" />
+                    <MaterialIcons name="add" size={32} color="#F1574D" />
                 </TouchableOpacity>
                 {isRemoveVisible &&
                 <TouchableOpacity style={styles.countRemove} onPress={handleOnPressRemove9}>
@@ -645,7 +649,7 @@ return (
             <View style={styles.countAddRemove} >
                 <Text style={styles.contador}>{count10}</Text>
                 <TouchableOpacity style={styles.countAdd} onPress={handleOnPressPlus10} >
-                    <MaterialIcons name="add" size={32} color="#D6F420" />
+                    <MaterialIcons name="add" size={32} color="#F1574D" />
                 </TouchableOpacity>
                 {isRemoveVisible &&
                 <TouchableOpacity style={styles.countRemove} onPress={handleOnPressRemove10}>
@@ -670,7 +674,7 @@ return (
             <View style={styles.countAddRemove} >
                 <Text style={styles.contador}>{count11}</Text>
                 <TouchableOpacity style={styles.countAdd} onPress={handleOnPressPlus11} >
-                    <MaterialIcons name="add" size={32} color="#D6F420" />
+                    <MaterialIcons name="add" size={32} color="#F1574D" />
                 </TouchableOpacity>
                 {isRemoveVisible &&
                 <TouchableOpacity style={styles.countRemove} onPress={handleOnPressRemove11}>
@@ -695,7 +699,7 @@ return (
             <View style={styles.countAddRemove} >
                 <Text style={styles.contador}>{count12}</Text>
                 <TouchableOpacity style={styles.countAdd} onPress={handleOnPressPlus12} >
-                    <MaterialIcons name="add" size={32} color="#D6F420" />
+                    <MaterialIcons name="add" size={32} color="#F1574D" />
                 </TouchableOpacity>
                 {isRemoveVisible &&
                 <TouchableOpacity style={styles.countRemove} onPress={handleOnPressRemove12}>

@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
     iconMenuItemTittle:{
         marginRight: 20,
         marginTop: 5,
-        color: '#D6F420',
+        color: '#F1574D',
     },
 
     titleMenuItemText:{
@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
 
     itemName:{
         fontFamily: 'Raleway_900Black',
-        color: '#D6F420',
+        color: '#F1574D',
         fontSize: 16,
         marginLeft: 10,
         marginTop: 5,
@@ -52,11 +52,11 @@ const styles = StyleSheet.create({
     iconFamily:{
         marginTop: -40,
         marginLeft: 90,
-        color: '#D6F420'
+        color: '#F1574D'
     },
     
     contador: {
-        color: '#D6F420',  
+        color: '#F1574D',  
         fontFamily: 'Poppins_600SemiBold',
         textAlign: 'center',
         fontSize: 20,
@@ -72,12 +72,11 @@ const styles = StyleSheet.create({
         width: "100%",
         overflow: 'hidden',
         borderRadius: 10,
-        marginTop: "-5%",
+        marginTop: "-10%",
     },
 
     countAdd:{
         marginRight: 25,
-        
         padding: 5,
     },
 
@@ -96,7 +95,7 @@ const styles = StyleSheet.create({
         fontFamily: 'Poppins_400Regular',
         color: '#9AABAE',
         fontSize: 12,
-        maxWidth: "60%",
+        maxWidth: "70%",
         marginBottom: 30,
         marginLeft: 10
     },
@@ -108,7 +107,7 @@ const styles = StyleSheet.create({
    
     costText:{
         fontFamily: 'Raleway_800ExtraBold',
-        color: '#D6F420',
+        color: '#F1574D',
         fontSize: 18,
         marginTop: 20,
         marginBottom: 20,
@@ -125,7 +124,7 @@ const styles = StyleSheet.create({
         
     countAddRemove:{
         alignItems: 'flex-end',
-        marginTop: "-40%"
+        marginTop: "-30%"
     },
          
     totalContainer:{
@@ -141,7 +140,7 @@ const styles = StyleSheet.create({
         justifyContent: 'flex-end',
         flexDirection: 'row',
         marginBottom: -10,
-        marginRight: -10
+        marginRight:  0
     },
 
     bagIcon:{
@@ -171,8 +170,8 @@ const styles = StyleSheet.create({
     },
 
     textResume:{
-        fontFamily: 'Poppins_600SemiBold',
-        color: '#D6F420',
+        fontFamily: 'Raleway_800ExtraBold',
+        color: '#F1574D',
         fontSize: 18,
         marginLeft: 10,
         marginTop: 10
@@ -190,7 +189,7 @@ const styles = StyleSheet.create({
 
     valorDescount:{
         fontFamily: 'Poppins_600SemiBold',
-        color: '#D6F420',
+        color: '#F1574D',
         fontSize: 14,
         textAlign: 'right',
         marginRight: 20,
@@ -227,7 +226,7 @@ const styles = StyleSheet.create({
     },
 
     buttonSendOrder:{
-        backgroundColor: '#D6F420',
+        backgroundColor: '#F1574D',
         width: '45%',
         alignContent: 'center',
         alignItems: 'center',

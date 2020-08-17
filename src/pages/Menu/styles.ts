@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
     },  
     
     buttonPrimary:{
-        backgroundColor: '#D6F420',
+        backgroundColor: '#F1574D',
         height: 75,
         borderRadius: 0,
         padding: 24,

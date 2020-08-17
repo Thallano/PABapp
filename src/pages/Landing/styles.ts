@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
 
     containerBottom:{
         flex:1,
-        backgroundColor: '#D6F420',
+        backgroundColor: '#F1574D',
         justifyContent: 'space-between',
         alignItems: 'center',
         padding: 40
@@ -68,7 +68,7 @@ const styles = StyleSheet.create({
 
     buttonTextMenu:{
         fontFamily: 'Poppins_600SemiBold',
-        color: '#D6F420',
+        color: '#F1574D',
         fontSize: 18,
         justifyContent: 'center',
         alignContent: 'center',

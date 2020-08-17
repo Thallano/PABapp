@@ -24,7 +24,7 @@ const PageHeader: React.FC<PageHeaderProps> = ({ title })=> {
             
             </View>
 
-            <Text style={styles.title}>CARDÁPIO:</Text>
+            <Text style={styles.title}>{title}</Text>
 
         </View>
         

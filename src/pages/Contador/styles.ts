@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
     },
     buttonText:{
         fontSize: 30, 
-        color: '#D6F420'
+        color: '#F1574D'
     },
     buttonText2:{
        color: '#F6821F',
@@ -33,16 +33,16 @@ const styles = StyleSheet.create({
     },
     addremove:{
         fontSize: 85,
-        color: '#D6F420'
+        color: '#F1574D'
          
     },
     textCont:{
         fontSize: 40,
-        color: '#D6F420'
+        color: '#F1574D'
     },
 
     iconFamily:{
-      color: '#D6F420'
+      color: '#F1574D'
   },
   
     

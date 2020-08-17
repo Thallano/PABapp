@@ -5,8 +5,6 @@ import { Entypo } from '@expo/vector-icons';
 
 import Arruma from '../pages/Arruma';
 
-
-
 const {Navigator, Screen} = createBottomTabNavigator ();
 
 
@@ -45,7 +43,7 @@ function MenuTabs() {
                 inactiveBackgroundColor: '#21282f',
                 activeBackgroundColor: '#21282f',
                 inactiveTintColor: '#3d4b58',
-                activeTintColor: '#D6F420',
+                activeTintColor: '#F1574D',
             }}>
             <Screen 
                 name="Menu" 
@@ -56,7 +54,7 @@ function MenuTabs() {
                         return(
                             <>
                             
-                            <Entypo name="bowl" size={30} color={focused ? '#D6F420' : color}/>
+                            <Entypo name="bowl" size={30} color={focused ? '#F1574D' : color}/>
                             
                             </>
                         );

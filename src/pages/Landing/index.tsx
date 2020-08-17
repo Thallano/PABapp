@@ -53,7 +53,7 @@ function Landing(){
 
             <RectButton onPress={handleNavigateToMenuTabs} style={styles.buttonPrimary}>
                 <Text style={styles.buttonTextMenu}>Menu do Restaurante</Text>
-                <MaterialIcons style={styles.iconToMenu} name="restaurant-menu" size={24} color="#D6F420" />
+                <MaterialIcons style={styles.iconToMenu} name="restaurant-menu" size={24} color="#F1574D" />
             </RectButton>
 
         </View>
